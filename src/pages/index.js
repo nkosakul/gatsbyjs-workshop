@@ -1,5 +1,9 @@
 import React from 'react';
+import { Link } from "gatsby";
 
-const Index = () => <div><h1>Hello World!</h1></div>;
-
-export default Index;
+export default () => (
+  <>
+    <h1>Hello World!</h1>
+    <Link to="/about/">about me</Link>
+  </>
+);
