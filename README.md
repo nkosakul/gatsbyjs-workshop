@@ -13,3 +13,13 @@ Mini Workshop using Gatsbyjs
 
 ## Install Gatsby and react
 `yarn add gatsby react react-dom cross-env prettier`
+
+## Linkin between pages
+using {Link} from gatsby
+
+## Adding Header and Footer
+- activeClassName
+
+## adding scss and using Layout
+
+## Lets wave!
