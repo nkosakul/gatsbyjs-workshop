@@ -32,5 +32,12 @@ using {Link} from gatsby
 
 ## SEO
 - yarn add gatsby-plugin-react-helmet react-helmet
-
+- config!
+```html
+<Helmet>
+    <html lang="de" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+</Helmet>
+```
 ## GraphQL!
