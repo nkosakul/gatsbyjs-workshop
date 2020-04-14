@@ -1,13 +1,37 @@
-.header {
-  @include container-medium;
+.navigation {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $c-white;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  padding-top: $space;
-  padding-bottom: $space-double;
-  display: flex;
-  justify-content: center;
+  &__inner {
+    @include container-medium;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    @include reset-list;
+
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: $f-weight-bold;
+
+    &:hover,
+    &.is-active {
+      @include text-gradient;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

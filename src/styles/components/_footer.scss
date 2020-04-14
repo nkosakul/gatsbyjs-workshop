@@ -1,11 +1,13 @@
 .footer {
-  background-color: $c-gray;
-  padding: $space;
+  @include module-space;
 
-  &--inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $c-black;
+
+  &__inner {
     @include container-medium;
 
-    padding-top: $space-half;
-    padding-bottom: $space-half;
+    color: $c-white;
   }
 }

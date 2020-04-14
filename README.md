@@ -21,5 +21,8 @@ using {Link} from gatsby
 - activeClassName
 
 ## adding scss and using Layout
+- yarn add gatsby-plugin-sass node-sass
+- import '../styles/index.scss';
+- gatsy-config.js
 
 ## Lets wave!

@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Footer = () => <footer>Made with ❤️ by nat</footer>;
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer__inner">
+      Made with love by nat
+    </div>
+  </footer>
+);
 
 export default Footer
