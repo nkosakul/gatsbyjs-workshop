@@ -1,0 +1,11 @@
+.footer {
+  background-color: $c-gray;
+  padding: $space;
+
+  &--inner {
+    @include container-medium;
+
+    padding-top: $space-half;
+    padding-bottom: $space-half;
+  }
+}

@@ -1,0 +1,13 @@
+.header {
+  @include container-medium;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding-top: $space;
+  padding-bottom: $space-double;
+  display: flex;
+  justify-content: center;
+}
