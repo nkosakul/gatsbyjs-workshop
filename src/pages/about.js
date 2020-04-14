@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 export default () => (
   <>
     <Layout>
-      <SEO title="About Me" description="The place to be" />
+      <SEO pageTitle="About Me" pageDescription="The place to be" />
       <Jumbotron title="About me" image="temple.jpg"/>
       <p>If you want to contact me, just wave!</p>
       <div style={{marginTop: '2rem'}}>

@@ -40,4 +40,7 @@ using {Link} from gatsby
     <meta name="description" content={description} />
 </Helmet>
 ```
+
 ## GraphQL!
+- hooks/use-useSiteMetadata.js
+- import { graphql, useStaticQuery } from 'gatsby';

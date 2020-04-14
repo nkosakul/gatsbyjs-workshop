@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 export default () => (
   <Layout>
-     <SEO title="Workshop Startpage" />
+     <SEO />
     <Jumbotron title="Hello World!" image="thailand.jpg"/>
   </Layout>
 );
