@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Jumbotron from '../components/jumbotron';
 
 export default () => (
   <Layout>
-    <h1>Hello World!</h1>
+    <Jumbotron title="Hello World!" image="thailand.jpg"/>
   </Layout>
 );

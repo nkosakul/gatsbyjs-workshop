@@ -26,3 +26,11 @@ using {Link} from gatsby
 - gatsy-config.js
 
 ## Lets wave!
+
+## Images
+- gatsby will look in static folder for assets
+
+## SEO
+- yarn add gatsby-plugin-react-helmet react-helmet
+
+## GraphQL!

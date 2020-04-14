@@ -14,6 +14,5 @@ html {
 }
 
 main {
-  @include module-space;
   @include container-medium;
 }
