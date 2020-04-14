@@ -1,2 +1,15 @@
 # gatsbyjs-workshop
 Mini Workshop using Gatsbyjs
+
+## Init the project with gatsby and react (and create first Page)
+
+### init the project
+`yarn init -y`
+
+## adding scripts
+"build": "cross-env GATSBY_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
+"develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+"analyze": "ANALYZE_BUDNLE_SIZE=true gatsby build"
+
+## Install Gatsby and react
+`yarn add gatsby react react-dom cross-env prettier`
