@@ -107,3 +107,8 @@ gatsbyRemarkPlugins: [
 ```
 - gatsby-node.js
 - templates/post.js
+
+
+## Post
+- use-posts.js
+- index post previews
