@@ -9,12 +9,13 @@ Mini Workshop using Gatsbyjs
 ## adding scripts
 "build": "cross-env GATSBY_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
 "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
-"analyze": "ANALYZE_BUDNLE_SIZE=true gatsby build"
 
 ## Install Gatsby and react
 `yarn add gatsby react react-dom cross-env prettier`
 
-## Linkin between pages
+## Create index, 404 and about
+
+## Linking between pages
 using {Link} from gatsby
 
 ## Adding Header and Footer
@@ -33,7 +34,8 @@ using {Link} from gatsby
 
 ## SEO
 - yarn add gatsby-plugin-react-helmet react-helmet
-- config!
+- config! `'gatsby-plugin-react-helmet',
+- create seo.js
 ```html
 <Helmet>
     <html lang="de" />
@@ -41,6 +43,7 @@ using {Link} from gatsby
     <meta name="description" content={description} />
 </Helmet>
 ```
+- use default first, then pass arguments
 
 ## GraphQL!
 - hooks/use-useSiteMetadata.js
@@ -61,7 +64,7 @@ using {Link} from gatsby
 - ...GatsbyImageSharpFluid_withWebp
 
 ## MDX (md files that let us write jsx in the markdown file)
-- create conteat page
+- create contact page
 - yarn add @mdx-js/mdx @mdx-js/react gatsby-plugin-mdx
 ```js
 {
