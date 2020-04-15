@@ -59,3 +59,31 @@ using {Link} from gatsby
 ```
 - query images (show sharp, aliases, conditions and variables)
 - ...GatsbyImageSharpFluid_withWebp
+
+## MDX (md files that let us write jsx in the markdown file)
+- create conteat page
+- yarn add @mdx-js/mdx @mdx-js/react gatsby-plugin-mdx
+```js
+{
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    name: 'pages',
+    path: require.resolve('./src/pages/'),
+  },
+},
+{
+  resolve: 'gatsby-plugin-mdx',
+  options: {
+    defaultLayouts: {
+      default: require.resolve('./src/components/layout.js'),
+    },
+  },
+},
+```
+- [image](./images)
+- need to install mdx image
+
+## Posts
+- posts/mdx
+- add more plugin
+- create layout

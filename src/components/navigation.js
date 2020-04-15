@@ -14,6 +14,9 @@ const Navigation = () => (
           <li>
             <Link to="/about/" activeClassName="is-active">About</Link>
           </li>
+          <li>
+            <Link to="/contact/" activeClassName="is-active">Contact</Link>
+          </li>
         </ul>
       </nav>
     </div>
