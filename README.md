@@ -29,6 +29,7 @@ using {Link} from gatsby
 
 ## Images
 - gatsby will look in static folder for assets
+- Jumbotron
 
 ## SEO
 - yarn add gatsby-plugin-react-helmet react-helmet
@@ -44,3 +45,17 @@ using {Link} from gatsby
 ## GraphQL!
 - hooks/use-useSiteMetadata.js
 - import { graphql, useStaticQuery } from 'gatsby';
+
+## Image Optimazation with Sharp
+ - yarn add gatsby-source-filesystem gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp
+```js
+{
+  resolve: 'gatsby-source-filesystem',
+  options: {
+    name: 'images',
+    path: 'images',
+  },
+},
+```
+- query images (show sharp, aliases, conditions and variables)
+- ...GatsbyImageSharpFluid_withWebp
