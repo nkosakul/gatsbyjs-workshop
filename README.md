@@ -93,7 +93,7 @@ gatsbyRemarkPlugins: [
 ],
 ```
 
-## Posts
+## Posts ORDER CONTENTFUL
 - posts/mdx
 - gatsby config
 ```js
@@ -113,6 +113,26 @@ gatsbyRemarkPlugins: [
 - use-posts.js
 - index post previews
 
+## Contenful
+- goethe example https://www.goethe.de/prj/fre/de/index.html?wt_sc=freiraum
+- yarn add gatsby-source-contentful dotenv
+config
+```js
+{
+  resolve: `gatsby-source-contentful`,
+  options: {
+    spaceId: process.env.SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    downloadLocal: true,
+  },
+},
+```
+- node.js
+- template
+- use contentful-post
+- index list
+- https://www.goethe.de/prj/fre/de/index.html?wt_sc=freiraum
+
 ## Webpack analyze
 - yarn add gatsby-plugin-webpack-bundle-analyzer
 "analyze": "ANALYZE_BUDNLE_SIZE=true gatsby build"
@@ -129,9 +149,10 @@ gatsbyRemarkPlugins: [
 ```
 
 ## Deployment with netlify
+- env! on deployment > env variables
 
 ## Webhhooks
-- Contentfull as Example
+- Contentful as Example
 
 ## what if site is using frequently? => nextjs
 - dont have image opt. build in

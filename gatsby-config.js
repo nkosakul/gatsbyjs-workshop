@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'Frontend Workshop',
@@ -52,6 +54,14 @@ module.exports = {
         disable: !process.env.ANALYZE_BUDNLE_SIZE,
         generateStatsFile: true,
         analyzerMode: 'static'
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
   ],

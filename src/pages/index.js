@@ -2,11 +2,11 @@ import React from 'react';
 import Layout from '../components/layout';
 import Jumbotron from '../components/jumbotron';
 import SEO from '../components/seo';
-import usePosts from '../hooks/use-posts';
+import useContenfulPosts from '../hooks/use-contentful-posts';
 import { Link } from 'gatsby';
 
 export default () => {
-  const posts = usePosts();
+  const posts = useContenfulPosts();
 
   return (
     <Layout>
@@ -20,8 +20,7 @@ export default () => {
               {post.title}
             </Link>
           </h2>
-          <small>{post.author}</small>
-          <p>{post.excerpt}</p>
+          <p>{post.body}</p>
           <Link to={post.slug}>
             Read the article
           </Link>

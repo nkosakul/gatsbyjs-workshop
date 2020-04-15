@@ -1,31 +1,26 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const result = await graphql(`
+  const contenfulResult = await graphql(`
     query {
-      allMdx {
+      allContentfulBlogPost {
         nodes {
-          frontmatter {
-            title
-            author
-            slug
-          }
-          excerpt
+          slug
         }
       }
-    }  
+    }
   `);
 
-  if (result.error) {
-    reporter.panic('failed to create posts', result.errors);
+  if (contenfulResult.error) {
+    reporter.panic('failed to create posts', contenfulResult.errors);
   }
 
-  const posts = result.data.allMdx.nodes;
+  const contenfulPosts = contenfulResult.data.allContentfulBlogPost.nodes;
 
-  posts.forEach(post => {
+  contenfulPosts.forEach(post => {
     actions.createPage({
-      path: post.frontmatter.slug,
-      component: require.resolve('./src/templates/post.js'),
+      path: post.slug,
+      component: require.resolve('./src/templates/contentful-post.js'),
       context: {
-        slug: post.frontmatter.slug,
+        slug: post.slug,
       }
     });
   });
