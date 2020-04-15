@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
-    "build": "cross-env gatsby build"
+    "build": "cross-env gatsby build",
+    "analyze": "ANALYZE_BUDNLE_SIZE=true gatsby build"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.8",
@@ -19,6 +20,7 @@
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-remark-images": "^3.2.2",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.4",

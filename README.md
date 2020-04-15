@@ -112,3 +112,30 @@ gatsbyRemarkPlugins: [
 ## Post
 - use-posts.js
 - index post previews
+
+## Webpack analyze
+- yarn add gatsby-plugin-webpack-bundle-analyzer
+"analyze": "ANALYZE_BUDNLE_SIZE=true gatsby build"
+```js
+{
+  resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+  options: {
+    production: true,
+    disable: !process.env.ANALYZE_BUDNLE_SIZE,
+    generateStatsFile: true,
+    analyzerMode: 'static'
+  },
+},
+```
+
+## Deployment with netlify
+
+## Webhhooks
+- Contentfull as Example
+
+## what if site is using frequently? => nextjs
+- dont have image opt. build in
+- a11y is better with gatsby
+- there is a plugin for most everything (gatsby and community)
+- BUT serveride-rendering
+- Client-side reindering => both eg dashboards
