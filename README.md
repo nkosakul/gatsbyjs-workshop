@@ -81,7 +81,17 @@ using {Link} from gatsby
 },
 ```
 - [image](./images)
-- need to install mdx image
+- yarn add gatsby-remark-images
+```js
+gatsbyRemarkPlugins: [
+  {
+    resolve: `gatsby-remark-images`,
+    options: {
+      maxWidth: 1260,
+    },
+  },
+],
+```
 
 ## Posts
 - posts/mdx
