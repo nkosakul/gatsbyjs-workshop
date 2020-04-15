@@ -95,5 +95,15 @@ gatsbyRemarkPlugins: [
 
 ## Posts
 - posts/mdx
-- add more plugin
-- create layout
+- gatsby config
+```js
+{
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    name: 'posts',
+    path: 'posts',
+  },
+}
+```
+- gatsby-node.js
+- templates/post.js
