@@ -1,0 +1,21 @@
+{
+  "name": "gatsbyjs-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nkosakul/gatsbyjs-workshop.git",
+  "author": "nkosakul <nkosakul@3pc.de>",
+  "scripts": {
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "build": "cross-env gatsby build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "gatsby": "^2.20.18",
+    "gatsby-plugin-sass": "^2.2.2",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
